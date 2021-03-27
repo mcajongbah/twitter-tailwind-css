@@ -7,225 +7,234 @@
     <title>Twitter UI</title>
   </head>
   <body>
-    <div class="w-full h-screen">
-      <div class="container h-full flex flex-row">
-        <div class="w-1/10 flex flex-col justify-between px-5 py-2.5">
-          <div class="flex flex-col">
-            <span
-              class="w-14 h-14 flex items-center justify-center rounded-full hover:bg-secondary"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-8 h-8"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="#1da1f2"
-                fill="#1da1f2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+    <div class="w-full items-center flex-col">
+      <div
+        style="display: grid; grid-template-columns: 275px 600px 405px"
+        class="container mx-auto"
+      >
+        <!-- side navigation -->
+        <div class="flex-col h-full">
+          <div
+            class="pt-5 space-y-64 sticky top-0 flex flex-col justify-between py-2.5"
+          >
+            <div class="flex flex-col pr-9">
+              <a
+                href="#"
+                class="w-14 h-14 mb-5 flex items-center justify-center rounded-full hover:bg-secondary"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-                />
-              </svg>
-            </span>
-            <div class="space-y-4">
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center text-primary hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#1da1f2"
+                  fill="#1da1f2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                  />
+                </svg>
+              </a>
+              <div class="space-y-4">
+                <button
+                  class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center text-primary hover:bg-secondary hover:text-primary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      />
+                    </svg>
+                  </span>
+                  <span> Home </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
+                      />
+                    </svg>
+                  </span>
+                  <span> Explore </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                      />
+                    </svg>
+                  </span>
+                  <span> Notifications </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span> Messages </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+                      />
+                    </svg>
+                  </span>
+                  <span> Bookmarks </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                    />
-                  </svg>
-                </span>
-                <span> Home </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
-                    />
-                  </svg>
-                </span>
-                <span> Explore </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                    />
-                  </svg>
-                </span>
-                <span> Notifications </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span> Messages </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
-                    />
-                  </svg>
-                </span>
-                <span> Bookmarks </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <rect x="5" y="3" width="14" height="18" rx="2" />
-                    <line x1="9" y1="7" x2="15" y2="7" />
-                    <line x1="9" y1="11" x2="15" y2="11" />
-                    <line x1="9" y1="15" x2="13" y2="15" />
-                  </svg>
-                </span>
-                <span> Lists </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
-                </span>
-                <span> Profile </span>
-              </button>
-              <button
-                class="w-max flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
-              >
-                <span class="w-6 h-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </span>
-                <span> More </span>
-              </button>
-              <button
-                class="w-full font-extrabold bg-primary text-lg items-center text-white h-12 rounded-full"
-              >
-                Tweet
-              </button>
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <rect x="5" y="3" width="14" height="18" rx="2" />
+                      <line x1="9" y1="7" x2="15" y2="7" />
+                      <line x1="9" y1="11" x2="15" y2="11" />
+                      <line x1="9" y1="15" x2="13" y2="15" />
+                    </svg>
+                  </span>
+                  <span> Lists </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span> Profile </span>
+                </button>
+                <button
+                  class="w-max hover:text-primary flex flex-row space-x-4 font-extrabold text-lg items-center hover:bg-secondary px-3 py-1 h-12 rounded-full"
+                >
+                  <span class="w-6 h-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                  <span> More </span>
+                </button>
+                <button
+                  class="w-full font-extrabold bg-primary text-lg items-center text-white h-12 rounded-full"
+                >
+                  Tweet
+                </button>
+              </div>
             </div>
-          </div>
-          <div>
-            <div>
+            <div class="pr-9">
               <button
                 class="w-full flex flex-row space-x-1 text-lg items-center hover:bg-secondary justify-between px-3 py-1 h-12 rounded-full"
               >
-                <span
-                  class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="w-12 h-12"
+                <span class="flex flex-row items-center space-x-2">
+                  <span
+                    class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
-                </span>
-                <span class="flex flex-col items-start justify-center">
-                  <p class="font-semibold">RealLifeShel...</p>
-                  <p class="text-sm font-thin">@_mcwaves</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="w-12 h-12"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="flex flex-col items-start justify-center">
+                    <p class="font-semibold">RealLifeShel...</p>
+                    <p class="text-sm font-thin">@_mcwaves</p>
+                  </span>
                 </span>
                 <span class="w-6 h-6">
                   <svg
@@ -246,9 +255,11 @@
             </div>
           </div>
         </div>
-        <div class="w-2/10 border-l border-r h-full">
-          <div class="flex flex-col space-y-9">
-            <div>
+
+        <!-- main area -->
+        <div class="flex-col h-full">
+          <div class="flex-col border-l border-r">
+            <div class="sticky top-0 w-full flex-col z-20 bg-white pt-2">
               <div
                 class="flex flex-row justify-between font-extrabold text-lg items-center border-b px-5 py-3"
               >
@@ -275,6 +286,8 @@
                   </svg>
                 </span>
               </div>
+            </div>
+            <div class="flex-1 flex-col">
               <div class="flex flex-row border-b px-5 pt-3">
                 <span
                   class="w-14 h-14 rounded-full border-primary border mt-2 flex items-center justify-center"
@@ -365,15 +378,805 @@
                   </div>
                 </div>
               </div>
+              <div class="w-full h-4 bg-gray-100 border-b"></div>
+              <!-- Tweets cards -->
+              <div class="px-5 py-5 flex-col">
+                <div class="flex flex-row space-x-4 h-auto">
+                  <div>
+                    <span
+                      class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-12 h-12"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row justify-between">
+                      <div class="font-light">
+                        <span class="font-bold">Mbora</span>
+                        <span class="font-light">@Mborajr</span>
+                        <span class="font-bold">
+                          &middot; 
+                        </span>
+                         7m
+                      </div>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </div>
+                    <div class="flex flex-row space-x-24">
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                          <path
+                            d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 py-5 flex-col">
+                <div class="flex flex-row space-x-4 h-auto">
+                  <div>
+                    <span
+                      class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-12 h-12"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row justify-between">
+                      <div class="font-light">
+                        <span class="font-bold">Mbora</span>
+                        <span class="font-light">@Mborajr</span>
+                        <span class="font-bold">
+                          &middot; 
+                        </span>
+                         7m
+                      </div>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </div>
+                    <div class="flex flex-row space-x-24">
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                          <path
+                            d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 py-5 flex-col">
+                <div class="flex flex-row space-x-4 h-auto">
+                  <div>
+                    <span
+                      class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-12 h-12"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row justify-between">
+                      <div class="font-light">
+                        <span class="font-bold">Mbora</span>
+                        <span class="font-light">@Mborajr</span>
+                        <span class="font-bold">
+                          &middot; 
+                        </span>
+                         7m
+                      </div>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </div>
+                    <div class="flex flex-row space-x-24">
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                          <path
+                            d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 py-5 flex-col">
+                <div class="flex flex-row space-x-4 h-auto">
+                  <div>
+                    <span
+                      class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-12 h-12"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row justify-between">
+                      <div class="font-light">
+                        <span class="font-bold">Mbora</span>
+                        <span class="font-light">@Mborajr</span>
+                        <span class="font-bold">
+                          &middot; 
+                        </span>
+                         7m
+                      </div>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </div>
+                    <div class="flex flex-row space-x-24">
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                          <path
+                            d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-5 py-5 flex-col">
+                <div class="flex flex-row space-x-4 h-auto">
+                  <div>
+                    <span
+                      class="w-10 h-10 rounded-full border-primary border flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="w-12 h-12"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row justify-between">
+                      <div class="font-light">
+                        <span class="font-bold">Mbora</span>
+                        <span class="font-light">@Mborajr</span>
+                        <span class="font-bold">
+                          &middot; 
+                        </span>
+                         7m
+                      </div>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </div>
+                    <div class="flex flex-row space-x-24">
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#597e8d"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                          <path
+                            d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          class="w-6 h-6"
+                          viewBox="0 0 24 24"
+                          stroke="#597e8d"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
-        <div class="w-3/10 h-full px-6 py-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-          exercitationem doloribus vitae ratione deserunt ab aliquid debitis
-          minus magni voluptatem, sint laborum cupiditate libero corrupti nisi
-          voluptates deleniti tempora ut.
+
+        <!-- search and trends navigation -->
+        <div class="flex-col h-full">
+          <div class="pt-5 sticky top-0 flex-col pl-9 pr-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            odio in repellat vero nam et vel molestiae perferendis tempora
+            perspiciatis culpa eligendi sed quod deleniti laboriosam? Animi,
+            quis culpa quo voluptatibus rerum deserunt dicta explicabo quos
+            aliquid natus molestiae illum debitis soluta laudantium nesciunt
+            veniam facere ratione quasi vero, neque necessitatibus perspiciatis
+            odit. Ipsum numquam quidem quam dolorem nostrum doloribus vitae
+            voluptate culpa autem voluptatibus aperiam voluptas iure illum non,
+            fugit eius magni velit odit est excepturi. Itaque porro id incidunt
+            totam, saepe reprehenderit voluptates modi fuga doloremque et quam
+            eveniet, commodi cumque! Numquam minima corporis aliquam reiciendis
+            dicta hic, nulla laudantium nisi adipisci labore porro vel fugiat
+            eius enim quo omnis provident sint repellat sequi commodi quis
+            nostrum rerum, nesciunt ab! Itaque nisi, unde beatae, earum veniam
+            culpa expedita sed id nemo, dolores quidem possimus voluptas!
+            Laborum nulla asperiores quam, dolor consequuntur numquam doloremque
+            error laudantium nobis nostrum fuga, eaque aut quo ipsam sint
+            voluptate natus provident, maiores ad aperiam ipsum odio inventore.
+            Dolorum amet ipsam sapiente cum, excepturi atque veritatis odit
+            architecto, vitae voluptas officiis ut repellendus quisquam minus
+            laudantium id ad porro? Excepturi nesciunt cupiditate obcaecati
+            ullam animi quod magni aliquam temporibus omnis dicta, laboriosam,
+            voluptas quis facere minima rem suscipit molestias, odit eos minus a
+            doloremque et laborum expedita! Facilis sequi quia perferendis,
+            ipsum quidem reprehenderit neque, incidunt veniam numquam totam
+            distinctio consequatur debitis. Placeat natus voluptas, magnam ipsum
+            ex itaque est, commodi adipisci laudantium, odio distinctio debitis?
+            Illo quaerat doloribus molestiae commodi eius fugit doloremque
+            veniam, vitae quibusdam. Earum eum laboriosam esse rerum dolorem
+            recusandae deserunt atque corporis ex necessitatibus dolore quo id,
+            explicabo minus, fugit iusto accusantium provident! Animi cum
+            consectetur culpa harum necessitatibus maxime aliquid. Itaque
+            pariatur expedita architecto laboriosam ullam consequuntur, culpa
+            quaerat iusto molestias necessitatibus. Accusamus minima rerum
+            assumenda totam dicta suscipit est odit facilis nobis error ducimus
+            voluptate fugit cupiditate blanditiis ut eligendi, aliquid, omnis
+            inventore. Enim repellendus asperiores doloremque aperiam rerum
+            commodi. Ipsa distinctio similique quod nostrum tempore voluptatibus
+            mollitia soluta aspernatur repellat quaerat. Doloribus consequuntur
+            impedit error necessitatibus vero. Praesentium modi dicta libero
+            dolore id, distinctio voluptate tenetur officia, suscipit inventore
+            magni ratione blanditiis fugit accusamus enim rem numquam! Soluta
+            asperiores natus laboriosam quasi! Rerum, assumenda at consectetur
+            fugit ab dolorem placeat quo, cum ullam neque iure similique
+            aperiam. Hic alias officiis doloribus natus eos rerum cumque,
+            doloremque nesciunt quae quas laborum reprehenderit dolore. Saepe
+            fugit officiis iste ratione inventore libero laudantium nostrum
+            voluptatem perferendis soluta doloremque, sit voluptatibus
+            reiciendis a quis eveniet. Placeat tempora beatae inventore veniam,
+            excepturi obcaecati qui nam rerum recusandae quaerat vero sed, ipsam
+            tenetur nesciunt accusantium, iure sit hic saepe. Ipsum, facere
+            eaque in optio dolorum culpa tenetur aut labore. Nostrum hic laborum
+            enim velit vel numquam! Ducimus rem aliquid itaque necessitatibus,
+            laborum, sunt reprehenderit accusamus aperiam animi dignissimos
+            saepe repudiandae, quidem officia totam nisi quia voluptates?
+            Deserunt laudantium voluptatibus blanditiis eum totam numquam unde
+            delectus iure repellendus pariatur, sit perferendis minus culpa
+            similique vel accusamus tenetur! Harum assumenda nesciunt amet
+            praesentium suscipit.
+          </div>
         </div>
       </div>
     </div>
