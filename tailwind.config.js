@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./public/**/*.html"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -8,11 +8,17 @@ module.exports = {
         secondary: "#F3F4F6",
         tertiary: "#EBEEF0",
         accent: "#F7F9FA",
+        dark: "#14202A",
+        trends: "#182634",
+        space: "#182634",
       },
       width: {
         "1/10": "275px",
         "2/10": "600px",
         "3/10": "405px",
+      },
+      gridTemplateColumns: {
+        16: "repeat(16, minmax(0, 1fr))",
       },
     },
     container: {
